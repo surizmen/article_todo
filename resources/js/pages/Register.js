@@ -234,7 +234,7 @@ class Register extends Component {
                               'is-invalid': 'password_confirmation' in errors,
                             })}
                             name="password_confirmation"
-                            placeholder="Confirm password"
+                            placeholder="Повтор пароля"
                             required
                             onChange={this.handleChange}
                             onBlur={this.handleBlur}
