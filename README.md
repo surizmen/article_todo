@@ -28,6 +28,10 @@ php artisan migrate
 ### Установить Javascript зависимости:
 npm install
 
+### ЗАпустить проект:
+Скомпилировать scss и js: npm run dev
+Запустить сервер: php artisan serve
+
 ## Дополнительные настройки
 Сгенерировать тестовые миграции:
 
