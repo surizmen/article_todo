@@ -209,7 +209,7 @@ class Register extends Component {
                               'is-invalid': 'password' in errors,
                             })}
                             name="password"
-                            placeholder="Enter password"
+                            placeholder="Введите пароль"
                             required
                             onChange={this.handleChange}
                             onBlur={this.handleBlur}
@@ -224,7 +224,7 @@ class Register extends Component {
 
                         <div className="form-group">
                           <label htmlFor="password_confirmation">
-                            Password Confirmation
+                            Повтор пароля
                           </label>
                           <input
                             id="password_confirmation"
