@@ -77,7 +77,6 @@ class Register extends Component {
       password_confirmation,
     };
 
-    // Set response state back to default.
     this.setState({ response: { error: false, message: '' } });
 
     this.validator.validateAll(credentials).then((success) => {
@@ -120,7 +119,7 @@ class Register extends Component {
           <div className="container">
             <div className="row">
               <div className="section-login col-lg-6 ml-auto mr-auto">
-                <h4>Register for the App</h4>
+                <h4>Регистрация</h4>
 
                 <div className="card-login card mb-3">
                   <div className="card-body">
@@ -254,7 +253,7 @@ class Register extends Component {
                               'btn-loading': loading,
                             })}
                           >
-                            Register
+                            Регистрация
                           </button>
                         </div>
                       </form>
