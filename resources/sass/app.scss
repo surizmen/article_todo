@@ -29,7 +29,6 @@ $btn-size-base: 1rem;
 
 .btn {
     transition: all 0.2s ease;
-
     &-loading {
         pointer-events: none;
         cursor: default;
@@ -132,35 +131,5 @@ header {
         font-size: 0.9rem;
     }
 }
-
-//.main {
-//  width: 100%;
-//  &-content{
-//    background: $black;
-//    &__card{
-//      color: #dd76ff;
-//    }
-//  }
-//  &__footer{
-//
-//    &-main{
-//      &-block{
-//
-//        &-icon{
-//
-//          &--VK{
-//
-//          }
-//          &--INST{
-//
-//          }
-//          &--FACEBOOK{
-//
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
 
 

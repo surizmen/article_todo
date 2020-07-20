@@ -70,7 +70,7 @@ class ArticleController extends ApiController
         'description' => request('description'),
       ]);
       $articlequery = Articles::where('id', $article->id)->firstOrFail();
-      $articlequery->orders = $todo->id;
+      $articlequery->orders = $article->id;
       $articlequery->save();
 
       return response()->json([

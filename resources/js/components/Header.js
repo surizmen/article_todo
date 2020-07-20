@@ -51,19 +51,19 @@ class Header extends Component {
           <Link to="/" className="header-logo__link">Новости</Link>
         </h1>
         {this.props.isAuthenticated ? (
-            <Nav>
-              <NavItem>
-                <NavLink tag={Link} to="/add-article">
+            <Nav className="header-nav">
+              <NavItem className="header-nav-item">
+                <NavLink className="header-nav-item__link" tag={Link} to="/add-article">
                   Добавить статью
                 </NavLink>
               </NavItem>
 
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+              <UncontrolledDropdown nav inNavbar className="header-nav-item">
+                <DropdownToggle nav caret className="header-nav-item__link">
                   Аккаунт
                 </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem onClick={this.handleLogout}>
+                <DropdownMenu right className="header-nav-item__link">
+                  <DropdownItem onClick={this.handleLogout} className="header-nav-item__link">
                     Выйти из аккаунта
                   </DropdownItem>
                   {this.state.role === 1 &&
@@ -78,16 +78,16 @@ class Header extends Component {
             </Nav>
 
         ) :
-          (<div className="navigation d-flex justify-content-end">
-              <Nav>
-                <NavItem>
-                  <NavLink tag={Link} to="/login">
+          (
+              <Nav className="header-nav">
+                <NavItem className="header-nav-item">
+                  <NavLink tag={Link} to="/login" className="header-nav-item__link">
                     Войти
                   </NavLink>
                 </NavItem>
 
               </Nav>
-            </div>
+
           )
         }
       </header>
