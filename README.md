@@ -2,6 +2,7 @@
 ### Установка
 Клонирование репозитория:
 git clone https://github.com/surizmen/article_todo.git
+cd  article_todo/
 
 Перемещение .env:
 cp .env.example .env
@@ -28,7 +29,7 @@ php artisan migrate
 ### Установить Javascript зависимости:
 npm install
 
-### ЗАпустить проект:
+### Зaпустить проект:
 Скомпилировать scss и js: npm run dev
 Запустить сервер: php artisan serve
 
