@@ -1,7 +1,8 @@
 # article_todo
-Установка
+### Установка
 Клонирование репозитория:
 git clone https://github.com/surizmen/article_todo.git
+
 Перемещение .env:
 cp .env.example .env
 
